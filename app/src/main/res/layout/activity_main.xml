@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.iswgr.sendrequest.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ac_bar_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ac_bar_title"
+        android:layout_margin="8dp"
+        android:text="开始" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#d6d7d7" />
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="1线程" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2线程" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3线程" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4线程" />
+
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5线程" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#d6d7d7" />
+
+        <RadioGroup
+            android:id="@+id/group2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="500次" />
+
+            <RadioButton
+                android:id="@+id/rb22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1500次" />
+
+            <RadioButton
+                android:id="@+id/rb42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3000次" />
+
+            <RadioButton
+                android:id="@+id/rb52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无限次" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#d6d7d7" />
+
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="访问次数"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+</RelativeLayout>
